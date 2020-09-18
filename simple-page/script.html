@@ -1,0 +1,59 @@
+<!-- script.html just has the 
+    basic elements that will be in
+    the webpage.
+ -->
+ 
+<!DOCTYPE html>
+
+<head>
+    <style type="text/css">
+        @import url("style.css");
+    </style>
+    <script src="my-js-scripts.js"></script> 
+</head>
+
+<body   
+    id ="body">
+    <div  
+        id="div">
+        <p  
+            id ="p" 
+            class="center">
+            This is Zenitsu.
+        </p>
+        <p id = "mouseEvent" class="center">
+
+        </p>
+        <button 
+            id="myBtn" 
+            name="button"
+            onClick="decideColorToChange()">
+             Change Color
+        </button>
+        <button 
+            name="button"
+            onClick="addDiv()">
+            Make Another Div
+        </button>
+        <img 
+            src="media/zenitsu_image_2.jpg"
+            alt="Picture of Zenitsu"
+            class="center">
+        </img>
+    </div>
+
+    <script>
+        document.getElementById("body").addEventListener("click", function(){
+            document.getElementById("mouseEvent").textContent = "CLICK";
+        });
+        document.getElementById("body").addEventListener("dblclick", function(){
+            document.getElementById("mouseEvent").textContent = "DOUBLE CLICK";
+        });
+        document.getElementById("body").addEventListener("mouseup", function(){
+            document.getElementById("mouseEvent").textContent = "MOUSE UP";
+        });
+        document.getElementById("body").addEventListener("mousedown", function(){
+            document.getElementById("mouseEvent").textContent = "MOUSE DOWN";
+        });
+    </script>
+</body>

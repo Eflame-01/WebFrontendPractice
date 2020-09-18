@@ -1,0 +1,39 @@
+/** styles.css customizes the elements
+    in script.html.
+ */
+
+body{
+    background-color:bisque;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    background-color: bisque;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+p{
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: 5mm;
+    width: auto;
+    color:black;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
